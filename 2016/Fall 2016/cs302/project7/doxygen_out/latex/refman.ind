@@ -1,0 +1,42 @@
+\begin{theindex}
+
+  \item {Binary\+Node}
+    \subitem {get\+Item}, \hyperpage{7}
+    \subitem {is\+Leaf}, \hyperpage{7}
+    \subitem {set\+Item}, \hyperpage{8}
+  \item {Binary\+Node$<$ Item\+Type $>$}, \hyperpage{7}
+  \item {Binary\+Node.\+cpp}, \hyperpage{11}
+  \item {Binary\+Node.\+h}, \hyperpage{11}
+  \item {Binary\+Node\+Tree$<$ Item\+Type $>$}, \hyperpage{8}
+  \item {Binary\+Node\+Tree.\+cpp}, \hyperpage{12}
+  \item {Binary\+Node\+Tree.\+h}, \hyperpage{12}
+  \item {Binary\+Search\+Tree$<$ Item\+Type $>$}, \hyperpage{9}
+  \item {Binary\+Search\+Tree.\+cpp}, \hyperpage{13}
+  \item {Binary\+Search\+Tree.\+h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {get\+Item}
+    \subitem {Binary\+Node}, \hyperpage{7}
+
+  \indexspace
+
+  \item {is\+Leaf}
+    \subitem {Binary\+Node}, \hyperpage{7}
+
+  \indexspace
+
+  \item {P\+A07.\+cpp}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Red\+Black\+Tree$<$ Item\+Type $>$}, \hyperpage{10}
+  \item {Red\+Black\+Tree.\+cpp}, \hyperpage{14}
+  \item {Red\+Black\+Tree.\+h}, \hyperpage{15}
+
+  \indexspace
+
+  \item {set\+Item}
+    \subitem {Binary\+Node}, \hyperpage{8}
+
+\end{theindex}

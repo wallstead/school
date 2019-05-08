@@ -1,0 +1,344 @@
+Williss-MacBook-Pro:project4 willisallstead$ ./PA04
+---BUBBLE SORT (1,000 unsorted)---
+[0] --- CPU Time: 2423
+[1] --- CPU Time: 2394
+[2] --- CPU Time: 2455
+[3] --- CPU Time: 2425
+[4] --- CPU Time: 2482
+[5] --- CPU Time: 2441
+[6] --- CPU Time: 2427
+[7] --- CPU Time: 2405
+[8] --- CPU Time: 2426
+[9] --- CPU Time: 2566
+Average elapsed CPU time: 2444
+Average comparison count: 497015
+      Average swap count: 246630
+--------------------------------
+---BUBBLE SORT (1,000 sorted)---
+[0] --- CPU Time: 4
+[1] --- CPU Time: 3
+[2] --- CPU Time: 4
+[3] --- CPU Time: 3
+[4] --- CPU Time: 3
+[5] --- CPU Time: 5
+[6] --- CPU Time: 3
+[7] --- CPU Time: 3
+[8] --- CPU Time: 4
+[9] --- CPU Time: 4
+Average elapsed CPU time: 3
+Average comparison count: 999
+      Average swap count: 0
+--------------------------------
+---BUBBLE SORT (10,000 unsorted)---
+[0] --- CPU Time: 306970
+[1] --- CPU Time: 305056
+[2] --- CPU Time: 309178
+[3] --- CPU Time: 308866
+[4] --- CPU Time: 306934
+[5] --- CPU Time: 306720
+[6] --- CPU Time: 303048
+[7] --- CPU Time: 308965
+[8] --- CPU Time: 308927
+[9] --- CPU Time: 318483
+Average elapsed CPU time: 308314
+Average comparison count: 49980804
+      Average swap count: 24873614
+--------------------------------
+---BUBBLE SORT (10,000 sorted)---
+[0] --- CPU Time: 41
+[1] --- CPU Time: 31
+[2] --- CPU Time: 31
+[3] --- CPU Time: 31
+[4] --- CPU Time: 31
+[5] --- CPU Time: 32
+[6] --- CPU Time: 31
+[7] --- CPU Time: 32
+[8] --- CPU Time: 31
+[9] --- CPU Time: 32
+Average elapsed CPU time: 32
+Average comparison count: 9999
+      Average swap count: 0
+--------------------------------
+---BUBBLE SORT (100,000 unsorted)---
+[0] --- CPU Time: 3.52164e+07
+[1] --- CPU Time: 3.50798e+07
+[2] --- CPU Time: 3.50102e+07
+[3] --- CPU Time: 3.50544e+07
+[4] --- CPU Time: 3.50513e+07
+[5] --- CPU Time: 3.52045e+07
+[6] --- CPU Time: 3.50668e+07
+[7] --- CPU Time: 3.64672e+07
+[8] --- CPU Time: 3.62945e+07
+[9] --- CPU Time: 3.63668e+07
+Average elapsed CPU time: 35481190
+Average comparison count: 704957279
+      Average swap count: 1844674405579639357
+--------------------------------
+---BUBBLE SORT (100,000 sorted)---
+[0] --- CPU Time: 296
+[1] --- CPU Time: 295
+[2] --- CPU Time: 316
+[3] --- CPU Time: 315
+[4] --- CPU Time: 307
+[5] --- CPU Time: 303
+[6] --- CPU Time: 303
+[7] --- CPU Time: 303
+[8] --- CPU Time: 304
+[9] --- CPU Time: 303
+Average elapsed CPU time: 304
+Average comparison count: 99999
+      Average swap count: 0
+--------------------------------
+---BUBBLE SORT (1,000,000 unsorted)---
+[0] --- CPU Time: 3.73568e+09
+[1] --- CPU Time: 3.78567e+09
+Average elapsed CPU time: 752134179
+Average comparison count: 356547957
+      Average swap count: 192951273
+--------------------------------
+---BUBBLE SORT (1,000,000 sorted)---
+[0] --- CPU Time: 3089
+Average elapsed CPU time: 308
+Average comparison count: 99999
+      Average swap count: 0
+--------------------------------
+---MERGE SORT (1,000 unsorted)---
+[0] --- CPU Time: 1657
+[1] --- CPU Time: 1515
+[2] --- CPU Time: 1472
+[3] --- CPU Time: 2318
+[4] --- CPU Time: 2044
+[5] --- CPU Time: 1726
+[6] --- CPU Time: 1670
+[7] --- CPU Time: 1598
+[8] --- CPU Time: 1764
+[9] --- CPU Time: 1539
+Average elapsed CPU time: 1730
+Average comparison count: 28684
+      Average swap count: 9976
+--------------------------------
+---MERGE SORT (1,000 sorted)---
+[0] --- CPU Time: 1427
+[1] --- CPU Time: 1423
+[2] --- CPU Time: 1452
+[3] --- CPU Time: 2309
+[4] --- CPU Time: 2601
+[5] --- CPU Time: 2153
+[6] --- CPU Time: 1979
+[7] --- CPU Time: 1881
+[8] --- CPU Time: 1686
+[9] --- CPU Time: 1591
+Average elapsed CPU time: 1850
+Average comparison count: 24996
+      Average swap count: 9976
+--------------------------------
+---MERGE SORT (10,000 unsorted)---
+[0] --- CPU Time: 20136
+[1] --- CPU Time: 16364
+[2] --- CPU Time: 19145
+[3] --- CPU Time: 16004
+[4] --- CPU Time: 17287
+[5] --- CPU Time: 17671
+[6] --- CPU Time: 18557
+[7] --- CPU Time: 16763
+[8] --- CPU Time: 16423
+[9] --- CPU Time: 16608
+Average elapsed CPU time: 17495
+Average comparison count: 387707
+      Average swap count: 133616
+--------------------------------
+---MERGE SORT (10,000 sorted)---
+[0] --- CPU Time: 17040
+[1] --- CPU Time: 15547
+[2] --- CPU Time: 15559
+[3] --- CPU Time: 17838
+[4] --- CPU Time: 14787
+[5] --- CPU Time: 15191
+[6] --- CPU Time: 16447
+[7] --- CPU Time: 15522
+[8] --- CPU Time: 15649
+[9] --- CPU Time: 17991
+Average elapsed CPU time: 16157
+Average comparison count: 336240
+      Average swap count: 133616
+--------------------------------
+---MERGE SORT (100,000 unsorted)---
+[0] --- CPU Time: 176810
+[1] --- CPU Time: 182583
+[2] --- CPU Time: 171721
+[3] --- CPU Time: 179510
+[4] --- CPU Time: 173263
+[5] --- CPU Time: 179096
+[6] --- CPU Time: 174089
+[7] --- CPU Time: 181591
+[8] --- CPU Time: 171329
+[9] --- CPU Time: 171372
+Average elapsed CPU time: 176136
+Average comparison count: 4874324
+      Average swap count: 1668928
+--------------------------------
+---MERGE SORT (100,000 sorted)---
+[0] --- CPU Time: 164939
+[1] --- CPU Time: 161286
+[2] --- CPU Time: 170489
+[3] --- CPU Time: 170780
+[4] --- CPU Time: 170616
+[5] --- CPU Time: 160051
+[6] --- CPU Time: 174548
+[7] --- CPU Time: 159920
+[8] --- CPU Time: 156496
+[9] --- CPU Time: 163018
+Average elapsed CPU time: 165214
+Average comparison count: 4191760
+      Average swap count: 1668928
+--------------------------------
+---MERGE SORT (1,000,000 unsorted)---
+[0] --- CPU Time: 1.82785e+06
+[1] --- CPU Time: 1.77227e+06
+[2] --- CPU Time: 1.81412e+06
+[3] --- CPU Time: 1.81231e+06
+[4] --- CPU Time: 1.80094e+06
+[5] --- CPU Time: 1.80143e+06
+[6] --- CPU Time: 1.648e+06
+[7] --- CPU Time: 1.80135e+06
+[8] --- CPU Time: 1.7934e+06
+[9] --- CPU Time: 1.78087e+06
+Average elapsed CPU time: 1785253
+Average comparison count: 58576882
+      Average swap count: 19951424
+--------------------------------
+---MERGE SORT (1,000,000 sorted)---
+[0] --- CPU Time: 1.65329e+06
+[1] --- CPU Time: 1.65788e+06
+[2] --- CPU Time: 1.54367e+06
+[3] --- CPU Time: 1.56931e+06
+[4] --- CPU Time: 1.70374e+06
+[5] --- CPU Time: 1.67004e+06
+[6] --- CPU Time: 1.69223e+06
+[7] --- CPU Time: 1.69971e+06
+[8] --- CPU Time: 1.65001e+06
+[9] --- CPU Time: 1.73949e+06
+Average elapsed CPU time: 1657938
+Average comparison count: 49969280
+      Average swap count: 19951424
+--------------------------------
+---COUNTING SORT (1,000 unsorted)---
+[0] --- CPU Time: 2316
+[1] --- CPU Time: 2282
+[2] --- CPU Time: 3381
+[3] --- CPU Time: 3072
+[4] --- CPU Time: 2316
+[5] --- CPU Time: 2182
+[6] --- CPU Time: 2196
+[7] --- CPU Time: 3182
+[8] --- CPU Time: 2478
+[9] --- CPU Time: 2305
+Average elapsed CPU time: 2571
+Average comparison count: 0
+      Average swap count: 1000
+--------------------------------
+---COUNTING SORT (1,000 sorted)---
+[0] --- CPU Time: 2560
+[1] --- CPU Time: 2661
+[2] --- CPU Time: 2470
+[3] --- CPU Time: 2561
+[4] --- CPU Time: 2315
+[5] --- CPU Time: 3150
+[6] --- CPU Time: 2613
+[7] --- CPU Time: 2746
+[8] --- CPU Time: 2738
+[9] --- CPU Time: 2382
+Average elapsed CPU time: 2619
+Average comparison count: 0
+      Average swap count: 1000
+--------------------------------
+---COUNTING SORT (10,000 unsorted)---
+[0] --- CPU Time: 2613
+[1] --- CPU Time: 2754
+[2] --- CPU Time: 2868
+[3] --- CPU Time: 2470
+[4] --- CPU Time: 2583
+[5] --- CPU Time: 2477
+[6] --- CPU Time: 2385
+[7] --- CPU Time: 2721
+[8] --- CPU Time: 2543
+[9] --- CPU Time: 3648
+Average elapsed CPU time: 2706
+Average comparison count: 0
+      Average swap count: 10000
+--------------------------------
+---COUNTING SORT (10,000 sorted)---
+[0] --- CPU Time: 2473
+[1] --- CPU Time: 2509
+[2] --- CPU Time: 2586
+[3] --- CPU Time: 2612
+[4] --- CPU Time: 2478
+[5] --- CPU Time: 2414
+[6] --- CPU Time: 3137
+[7] --- CPU Time: 2634
+[8] --- CPU Time: 3006
+[9] --- CPU Time: 2374
+Average elapsed CPU time: 2622
+Average comparison count: 0
+      Average swap count: 10000
+--------------------------------
+---COUNTING SORT (100,000 unsorted)---
+[0] --- CPU Time: 3784
+[1] --- CPU Time: 3951
+[2] --- CPU Time: 5964
+[3] --- CPU Time: 4745
+[4] --- CPU Time: 6330
+[5] --- CPU Time: 4219
+[6] --- CPU Time: 4830
+[7] --- CPU Time: 5465
+[8] --- CPU Time: 4487
+[9] --- CPU Time: 4396
+Average elapsed CPU time: 4817
+Average comparison count: 0
+      Average swap count: 99999
+--------------------------------
+---COUNTING SORT (100,000 sorted)---
+[0] --- CPU Time: 3738
+[1] --- CPU Time: 3758
+[2] --- CPU Time: 5108
+[3] --- CPU Time: 4284
+[4] --- CPU Time: 3718
+[5] --- CPU Time: 3864
+[6] --- CPU Time: 5360
+[7] --- CPU Time: 4441
+[8] --- CPU Time: 3672
+[9] --- CPU Time: 3658
+Average elapsed CPU time: 4160
+Average comparison count: 0
+      Average swap count: 100000
+--------------------------------
+---COUNTING SORT (1,000,000 unsorted)---
+[0] --- CPU Time: 22781
+[1] --- CPU Time: 19267
+[2] --- CPU Time: 21038
+[3] --- CPU Time: 21662
+[4] --- CPU Time: 21007
+[5] --- CPU Time: 17833
+[6] --- CPU Time: 21597
+[7] --- CPU Time: 18205
+[8] --- CPU Time: 18031
+[9] --- CPU Time: 20890
+Average elapsed CPU time: 20231
+Average comparison count: 0
+      Average swap count: 999997
+--------------------------------
+---COUNTING SORT (1,000,000 sorted)---
+[0] --- CPU Time: 15483
+[1] --- CPU Time: 16497
+[2] --- CPU Time: 17836
+[3] --- CPU Time: 18191
+[4] --- CPU Time: 18204
+[5] --- CPU Time: 17781
+[6] --- CPU Time: 15603
+[7] --- CPU Time: 15472
+[8] --- CPU Time: 15148
+[9] --- CPU Time: 14721
+Average elapsed CPU time: 16493
+Average comparison count: 0
+      Average swap count: 1000000
+--------------------------------

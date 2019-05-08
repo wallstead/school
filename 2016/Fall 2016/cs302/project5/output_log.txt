@@ -1,0 +1,29 @@
+--Simulation with 1 queues and 1 tellers--
+Elapsed CPU Time     : 16990625
+Elapsed Virtual Time : 505631
+Max Wait Time        : 100
+Avg Wait Time        : 25
+Max Line Length      : 9813
+Avg Line Length      : 0
+--Simulation with 3 queues and 3 tellers--
+Elapsed CPU Time     : 50895203
+Elapsed Virtual Time : 168557
+Max Wait Time        : 100
+Avg Wait Time        : 25
+Max Line Length      : 3139
+Avg Line Length      : 0
+--Simulation with 1 queues and 3 tellers--
+Elapsed CPU Time     : 52966844
+Elapsed Virtual Time : 168570
+Max Wait Time        : 100
+Avg Wait Time        : 25
+Max Line Length      : 9420
+Avg Line Length      : 0
+Single queue with how many tellers? 4
+--Simulation with 1 queues and 4 tellers--
+Elapsed CPU Time     : 67040433
+Elapsed Virtual Time : 126437
+Max Wait Time        : 100
+Avg Wait Time        : 25
+Max Line Length      : 9221
+Avg Line Length      : 0

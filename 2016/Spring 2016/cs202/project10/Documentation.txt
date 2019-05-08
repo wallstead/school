@@ -1,0 +1,63 @@
+Student Name: Willis Allstead
+Program Name: LISTS
+Program Purpose: To learn about Lists.
+
+The listArray implementation was included with the specification file I was
+given. I had to rename the file to a .cpp because the compiler was giving me
+warnings about compiling a .h for some reason. The ListArray class is templated.
+To initialize the array, I allocate memory for the data, set the cursor to -1
+and set actual to 0. In the copy constructor, I first make sure I am not copying
+an instance of itself, then I retrieve all data members. I then populate the new
+array in a for loop. In the destructor I delete the memory allocated for the
+array and reset all data members to their respective values. In the insertBefore
+function I first make sure the array isn't full, then if it is empty I move the
+cursor to the first position and set the value there. I then increment actual++.
+If it is not empty, I simply shift everything to the right of the cursor over to
+the right one place and set the cursor value while incrementing actual.
+insertAfter is done by shifting everything to the right of the cursor right one
+then shifting the cursor to the right one and setting the value there, while
+incrementing actual. The get function simply returns the value at the cursor.
+remove returns the value at the cursor then moves everything to the right of the
+cursor left one, while decrementing actual. If the cursor is then out of bounds,
+it is shifted left one too. goToBeginning sets cursor to 0. goToEnd sets cursor
+to actual-1 (the last space in the area). goToNext increments cursor if doing so
+would not put it out of bounds. goToPrior decrements cursor if doing so would
+not put it out of bounds. isEmpty checks if actual = 0. isFull checks if actual
+= size. The assignment operator acts almost identically to the copy constructor.
+The ostream << operator function loops through each item in the area and styles
+the output.
+
+The listNode implementation first defines the Node constructor. This constructor
+for the ListNode class sets both head and cursor pointers to NULL. The copy
+constructor sets head and cursor to NULL if the listNode to be copied is empty.
+If it is not empty, head and cursor are set to a new node with the data of the
+toCopy node, and next is set to NULL. Then two pointers, stmp (sourcetmp) and
+dtmp (destinationtmp) are set to their respective heads. While the stmp is not
+NULL, if stmp's next is not NULL, a new node is created that copies stmp's next
+and dtmp is pointed to it, then set to it. Then if stmp is the cursor of the
+source, the destination's cursor is set to dtmp. Then stmp goes to its next.
+The destructor calls the clear function. insertAfter, if not full and is empty,
+sets head and cursor to a new node with the given data. If not full but not
+empty, a tmp node is created with that data and if the cursor is at the end it
+has cursor's next point to it, then moves cursor to it. If it is not at the end,
+it attaches itself to the node after the cursor, then sets the cursor's next to
+point to it. insertBefore, if not full and empty, creates a new node with the
+data given and sets head and cursor to it. If it is not empty, but it is the
+first node, it sets cursor and head to a new node with the data that points to
+the old head. If not the first node it creates a copy of the cursor node, and
+connects the cursor to that copy, while setting the data of the cursor to the
+data provided. get returns the data at the cursor. remove, if not empty, returns
+the data about to be removed then if it is at the first node it sets cursor to
+head to head's next. If it isn't at the first, it leaves a tmp node pointer at
+the cursor, goes to prior, and sets cursor's next to tmp's next. clear loops
+through each node and deletes it, if it isn't already empty. goToBeginning sets
+cursor to head. goToEnd loops from the cursor to the end in a while loop.
+goToNext, if not at the end, sets cursor to cursor's next. goToPrior creates a
+tmp node that starts from the head and goes until it finds what node's next
+points to the cursor. It then sets the cursor to it. isEmpty checks if head is
+NULL. isFull returns false. The assignment operator is almost identical to the
+copy constructor. The ostream << operator traverses from the head to the end
+and outputs the data in each node.
+
+Changes I would make: I would find an easier way to do the assignment operator/
+copy constructor for the listNode class.

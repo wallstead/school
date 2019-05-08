@@ -1,0 +1,27 @@
+0.000001 - Simulator program starting
+0.000027 - OS: preparing Process 1
+0.000030 - OS: starting process Process 1
+0.000031 - Process 1: start keyboard input
+6.407375 - Process 1: end keyboard input
+6.407398 - Process 1: start hard drive input
+6.477453 - Process 1: end hard drive input
+6.477475 - Process 1: start monitor output
+6.477491 - Process 1: end monitor output
+6.477494 - Process 1: allocating memory
+6.636581 - Process 1: memory allocated at 0x8205
+6.636603 - Process 1: start processing action
+6.743293 - Process 1: end processing action
+6.743438 - Process 1: start processing action
+6.789145 - Process 1: end processing action
+6.789167 - Process 1: start processing action
+6.899313 - Process 1: end processing action
+6.899336 - Process 1: start processing action
+6.961457 - Process 1: end processing action
+6.961470 - Process 1: start processing action
+7.060943 - Process 1: end processing action
+7.060977 - Process 1: start processing action
+7.171242 - Process 1: end processing action
+7.171266 - Process 1: start memory blocking
+7.295270 - Process 1: end memory blocking
+7.295292 - OS: removing Process 1
+7.295294 - Simulator program ending

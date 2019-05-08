@@ -1,0 +1,104 @@
+\hypertarget{class_city}{}\section{City Class Reference}
+\label{class_city}\index{City@{City}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_city_a1b1f549430f0a7ecd0ec7b1605415193}{City} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the class. \end{DoxyCompactList}\item 
+\hyperlink{class_city_a229bbfb90d196dd02a9699625bb86ae5}{City} (string)
+\begin{DoxyCompactList}\small\item\em Custom constructor for the class. \end{DoxyCompactList}\item 
+\hyperlink{class_city_a2401eee13bc31fb10f4236790c7ecb03}{City} (const \hyperlink{class_city}{City} \&to\+Copy)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the class. \end{DoxyCompactList}\item 
+void \hyperlink{class_city_a14c86786f56c6653d8ad38db67e09c0d}{add\+Adjacent\+City} (\hyperlink{class_city}{City} adjacent)
+\begin{DoxyCompactList}\small\item\em add\+Adjacent\+City function \end{DoxyCompactList}\item 
+string \hyperlink{class_city_a4843313c0238390843ae5760ec5b6561}{get\+Name} () const
+\begin{DoxyCompactList}\small\item\em get\+Name function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_city_a3ad0293cf12ceb3e9754b93f78c019ac}{}\label{class_city_a3ad0293cf12ceb3e9754b93f78c019ac} 
+bool {\bfseries visited}
+\item 
+\hypertarget{class_city_acd96750e827d7bee9d46e51aa80a19f6}{}\label{class_city_acd96750e827d7bee9d46e51aa80a19f6} 
+\hyperlink{class_stack}{Stack}$<$ \hyperlink{class_city}{City} $>$ {\bfseries adjacent\+Cities}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_city_a3d76003bb85bc7dd3f9fd5630287cb77}{operator$<$$<$} (ostream \&out, const \hyperlink{class_city}{City} \&city)
+\begin{DoxyCompactList}\small\item\em ostream $<$$<$ overloader \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_city_a1b1f549430f0a7ecd0ec7b1605415193}{}\label{class_city_a1b1f549430f0a7ecd0ec7b1605415193} 
+\index{City@{City}!City@{City}}
+\index{City@{City}!City@{City}}
+\subsubsection{\texorpdfstring{City()}{City()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily City\+::\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the class. 
+
+constructs the class \hypertarget{class_city_a229bbfb90d196dd02a9699625bb86ae5}{}\label{class_city_a229bbfb90d196dd02a9699625bb86ae5} 
+\index{City@{City}!City@{City}}
+\index{City@{City}!City@{City}}
+\subsubsection{\texorpdfstring{City()}{City()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily City\+::\+City (\begin{DoxyParamCaption}\item[{string}]{city\+Name }\end{DoxyParamCaption})}
+
+
+
+Custom constructor for the class. 
+
+constructs the class from the name of a city \hypertarget{class_city_a2401eee13bc31fb10f4236790c7ecb03}{}\label{class_city_a2401eee13bc31fb10f4236790c7ecb03} 
+\index{City@{City}!City@{City}}
+\index{City@{City}!City@{City}}
+\subsubsection{\texorpdfstring{City()}{City()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily City\+::\+City (\begin{DoxyParamCaption}\item[{const \hyperlink{class_city}{City} \&}]{to\+Copy }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the class. 
+
+constructs the class from a copy 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_city_a14c86786f56c6653d8ad38db67e09c0d}{}\label{class_city_a14c86786f56c6653d8ad38db67e09c0d} 
+\index{City@{City}!add\+Adjacent\+City@{add\+Adjacent\+City}}
+\index{add\+Adjacent\+City@{add\+Adjacent\+City}!City@{City}}
+\subsubsection{\texorpdfstring{add\+Adjacent\+City()}{addAdjacentCity()}}
+{\footnotesize\ttfamily void City\+::add\+Adjacent\+City (\begin{DoxyParamCaption}\item[{\hyperlink{class_city}{City}}]{adjacent }\end{DoxyParamCaption})}
+
+
+
+add\+Adjacent\+City function 
+
+pushes a city to the adjacent\+Cities stack \hypertarget{class_city_a4843313c0238390843ae5760ec5b6561}{}\label{class_city_a4843313c0238390843ae5760ec5b6561} 
+\index{City@{City}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!City@{City}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily string City\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Name function 
+
+returns the name of the city 
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_city_a3d76003bb85bc7dd3f9fd5630287cb77}{}\label{class_city_a3d76003bb85bc7dd3f9fd5630287cb77} 
+\index{City@{City}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!City@{City}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \hyperlink{class_city}{City} \&}]{city }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+ostream $<$$<$ overloader 
+
+enables printing with cout 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_city_8h}{City.\+h}\item 
+\hyperlink{_city_8cpp}{City.\+cpp}\end{DoxyCompactItemize}

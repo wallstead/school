@@ -1,0 +1,109 @@
+Script started on Tue 02 Feb 2016 12:29:44 PM PST
+]0;parallels@ubuntu: ~/Desktop/projects/project2parallels@ubuntu:~/Desktop/projects/project2$ ./p2
+--------------------------------------------------------------------------------
+Rent-A-Vehicle
+--------------------------------------------------------------------------------
+[1] Read data from file
+[2] Print out all data for all cars
+[3] Estimate car rental cost
+[4] Find most expensive car
+[5] Print out all available cars
+[6] Exit program
+--------------------------------------------------------------------------------
+Selection: 1
+--------------------------------------------------------------------------------
+Enter input file name: carData
+Data from carData read successfully
+--------------------------------------------------------------------------------
+Rent-A-Vehicle
+--------------------------------------------------------------------------------
+[1] Read data from file
+[2] Print out all data for all cars
+[3] Estimate car rental cost
+[4] Find most expensive car
+[5] Print out all available cars
+[6] Exit program
+--------------------------------------------------------------------------------
+Selection: 2
+--------------------------------------------------------------------------------
+All data for all cars:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+YEAR    MAKE      MODEL      PRICE/DAY    AVAILABLE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2012    Honda     CRV        $85.1        false  
+2014    Toyota    Tacoma     $115.12      true   
+2015    Ford      Fusion     $90.89       false  
+2013    GMC       Yukon      $110.43      false  
+2009    Dodge     Neon       $45.25       true   
+2011    Toyota    Rav4       $65.02       true   
+2012    Mazda     CX5        $86.75       true   
+2016    Subaru    Outback    $71.27       false  
+2015    Ford      F150       $112.83      true   
+2010    Toyota    Corolla    $50.36       true   
+--------------------------------------------------------------------------------
+Rent-A-Vehicle
+--------------------------------------------------------------------------------
+[1] Read data from file
+[2] Print out all data for all cars
+[3] Estimate car rental cost
+[4] Find most expensive car
+[5] Print out all available cars
+[6] Exit program
+--------------------------------------------------------------------------------
+Selection: 3
+--------------------------------------------------------------------------------
+Enter car number (1-10): 5
+Enter number of days you want to rent: 20
+Your estimated total cost is: $905
+--------------------------------------------------------------------------------
+Rent-A-Vehicle
+--------------------------------------------------------------------------------
+[1] Read data from file
+[2] Print out all data for all cars
+[3] Estimate car rental cost
+[4] Find most expensive car
+[5] Print out all available cars
+[6] Exit program
+--------------------------------------------------------------------------------
+Selection: 4
+--------------------------------------------------------------------------------
+Most expensive car: 2014 Toyota Tacoma
+--------------------------------------------------------------------------------
+Rent-A-Vehicle
+--------------------------------------------------------------------------------
+[1] Read data from file
+[2] Print out all data for all cars
+[3] Estimate car rental cost
+[4] Find most expensive car
+[5] Print out all available cars
+[6] Exit program
+--------------------------------------------------------------------------------
+Selection: 5
+--------------------------------------------------------------------------------
+All data for available cars:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+YEAR    MAKE      MODEL      PRICE/DAY    AVAILABLE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2014    Toyota    Tacoma     $115.12      true   
+2009    Dodge     Neon       $45.25       true   
+2011    Toyota    Rav4       $65.02       true   
+2012    Mazda     CX5        $86.75       true   
+2015    Ford      F150       $112.83      true   
+2010    Toyota    Corolla    $50.36       true   
+--------------------------------------------------------------------------------
+Rent-A-Vehicle
+--------------------------------------------------------------------------------
+[1] Read data from file
+[2] Print out all data for all cars
+[3] Estimate car rental cost
+[4] Find most expensive car
+[5] Print out all available cars
+[6] Exit program
+--------------------------------------------------------------------------------
+Selection: 6
+--------------------------------------------------------------------------------
+Exiting program
+]0;parallels@ubuntu: ~/Desktop/projects/project2parallels@ubuntu:~/Desktop/projects/project2$ exit
+exit
+
+Script done on Tue 02 Feb 2016 12:30:31 PM PST

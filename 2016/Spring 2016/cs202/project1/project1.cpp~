@@ -1,0 +1,13 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main () {
+	ofstream myfile; // create variable to hold file with list of names.
+  myfile.open ("names.txt"); // open the file
+  myfile << "Writing this to a file.\n";
+  myfile.close();
+  return 0;
+}
+

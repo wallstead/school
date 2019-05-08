@@ -1,0 +1,95 @@
+\hypertarget{class_binary_node_tree}{}\section{Binary\+Node\+Tree$<$ Item\+Type $>$ Class Template Reference}
+\label{class_binary_node_tree}\index{Binary\+Node\+Tree$<$ Item\+Type $>$@{Binary\+Node\+Tree$<$ Item\+Type $>$}}
+Inheritance diagram for Binary\+Node\+Tree$<$ Item\+Type $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_binary_node_tree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_binary_node_tree_ae3b5ffa874ac164a50dd9cd1eb43ca03}{}\label{class_binary_node_tree_ae3b5ffa874ac164a50dd9cd1eb43ca03} 
+bool {\bfseries is\+Empty} () const
+\item 
+\hypertarget{class_binary_node_tree_a19f562021609b30955f808759f53ca8f}{}\label{class_binary_node_tree_a19f562021609b30955f808759f53ca8f} 
+int {\bfseries get\+Height} () const
+\item 
+\hypertarget{class_binary_node_tree_a2be8730b32f32250c5feff576378d34a}{}\label{class_binary_node_tree_a2be8730b32f32250c5feff576378d34a} 
+int {\bfseries get\+Number\+Of\+Nodes} () const
+\item 
+\hypertarget{class_binary_node_tree_ae8556653f8a673c5fe7a2404948e408f}{}\label{class_binary_node_tree_ae8556653f8a673c5fe7a2404948e408f} 
+Item\+Type {\bfseries get\+Root\+Data} () const
+\item 
+\hypertarget{class_binary_node_tree_a2c839fd1f9eff387ea134792ecb8c34d}{}\label{class_binary_node_tree_a2c839fd1f9eff387ea134792ecb8c34d} 
+void {\bfseries set\+Root\+Data} (const Item\+Type \&new\+Data)
+\item 
+\hypertarget{class_binary_node_tree_a0f98a30d162875a4d5ffedd40b658240}{}\label{class_binary_node_tree_a0f98a30d162875a4d5ffedd40b658240} 
+bool {\bfseries add} (const Item\+Type \&new\+Data)
+\item 
+\hypertarget{class_binary_node_tree_a5c3383e6cde4f794028e2264cd8e9d3f}{}\label{class_binary_node_tree_a5c3383e6cde4f794028e2264cd8e9d3f} 
+bool {\bfseries remove} (const Item\+Type \&data)
+\item 
+\hypertarget{class_binary_node_tree_a6ec544a0b10d9323b8008660825b98b7}{}\label{class_binary_node_tree_a6ec544a0b10d9323b8008660825b98b7} 
+void {\bfseries clear} ()
+\item 
+\hypertarget{class_binary_node_tree_a0231a6e71abac98bb4cca6a0df444c46}{}\label{class_binary_node_tree_a0231a6e71abac98bb4cca6a0df444c46} 
+Item\+Type {\bfseries get\+Entry} (const Item\+Type \&an\+Entry) const
+\item 
+\hypertarget{class_binary_node_tree_a73c482860c5dc6c0b8cec6af720f6cc9}{}\label{class_binary_node_tree_a73c482860c5dc6c0b8cec6af720f6cc9} 
+bool {\bfseries contains} (const Item\+Type \&an\+Entry) const
+\item 
+\hypertarget{class_binary_node_tree_aadc0ac498739400c97d86440c6b5a721}{}\label{class_binary_node_tree_aadc0ac498739400c97d86440c6b5a721} 
+void {\bfseries preorder\+Traverse} (void visit(Item\+Type \&)) const
+\item 
+\hypertarget{class_binary_node_tree_a910b0d440f78a109d0f158b0bd4c36f4}{}\label{class_binary_node_tree_a910b0d440f78a109d0f158b0bd4c36f4} 
+void {\bfseries inorder\+Traverse} (void visit(Item\+Type \&)) const
+\item 
+\hypertarget{class_binary_node_tree_aee55076ce323c43e18776a724943a75f}{}\label{class_binary_node_tree_aee55076ce323c43e18776a724943a75f} 
+void {\bfseries postorder\+Traverse} (void visit(Item\+Type \&)) const
+\item 
+\hypertarget{class_binary_node_tree_a79c6b41ab96eee8649ed29e04b9b699a}{}\label{class_binary_node_tree_a79c6b41ab96eee8649ed29e04b9b699a} 
+\hyperlink{class_binary_node_tree}{Binary\+Node\+Tree} \& {\bfseries operator=} (const \hyperlink{class_binary_node_tree}{Binary\+Node\+Tree} \&rhs)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_binary_node_tree_ab4fb3e839f07f821d7c1e038758cc111}{}\label{class_binary_node_tree_ab4fb3e839f07f821d7c1e038758cc111} 
+int {\bfseries get\+Height\+Helper} (\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$sub\+Tree\+Ptr) const
+\item 
+\hypertarget{class_binary_node_tree_a924b9aaeb31752e5fcfc2177726d2c58}{}\label{class_binary_node_tree_a924b9aaeb31752e5fcfc2177726d2c58} 
+int {\bfseries get\+Number\+Of\+Nodes\+Helper} (\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$sub\+Tree\+Ptr) const
+\item 
+\hypertarget{class_binary_node_tree_af4cd664f49b227fee63d354045a7e2af}{}\label{class_binary_node_tree_af4cd664f49b227fee63d354045a7e2af} 
+\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$ {\bfseries balanced\+Add} (\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$sub\+Tree\+Ptr, \hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$new\+Node\+Ptr)
+\item 
+\hypertarget{class_binary_node_tree_a596c526de53c2fe3508ccbeea5f1bf67}{}\label{class_binary_node_tree_a596c526de53c2fe3508ccbeea5f1bf67} 
+\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$ {\bfseries remove\+Value} (\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$sub\+Tree\+Ptr, const Item\+Type target, bool \&is\+Successful)
+\item 
+\hypertarget{class_binary_node_tree_ac273b8fe6bd5233f9aff4404a9ce0d9f}{}\label{class_binary_node_tree_ac273b8fe6bd5233f9aff4404a9ce0d9f} 
+\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$ {\bfseries move\+Values\+Up\+Tree} (\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$sub\+Tree\+Ptr)
+\item 
+\hypertarget{class_binary_node_tree_ac11b93683d0572f0ba923037e4efc5e5}{}\label{class_binary_node_tree_ac11b93683d0572f0ba923037e4efc5e5} 
+\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$ {\bfseries find\+Node} (\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$tree\+Ptr, const Item\+Type \&target, bool \&is\+Successful) const
+\item 
+\hypertarget{class_binary_node_tree_a7fe3c074cc9bc8c7cec0d9cf2033343f}{}\label{class_binary_node_tree_a7fe3c074cc9bc8c7cec0d9cf2033343f} 
+\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$ {\bfseries copy\+Tree} (\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$old\+Tree\+Ptr) const
+\item 
+\hypertarget{class_binary_node_tree_a3a1ed24736793b434d227939b0abd596}{}\label{class_binary_node_tree_a3a1ed24736793b434d227939b0abd596} 
+void {\bfseries destroy\+Tree} (\hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$sub\+Tree\+Ptr)
+\item 
+\hypertarget{class_binary_node_tree_af04bfe7d29eb82f8cfa5f812348495da}{}\label{class_binary_node_tree_af04bfe7d29eb82f8cfa5f812348495da} 
+void {\bfseries preorder} (void visit(Item\+Type \&), \hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$tree\+Ptr) const
+\item 
+\hypertarget{class_binary_node_tree_a39ccafd824a2142467c00d0a989ddb6b}{}\label{class_binary_node_tree_a39ccafd824a2142467c00d0a989ddb6b} 
+void {\bfseries inorder} (void visit(Item\+Type \&), \hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$tree\+Ptr) const
+\item 
+\hypertarget{class_binary_node_tree_a296732b311d2645d697b08076c1e5e28}{}\label{class_binary_node_tree_a296732b311d2645d697b08076c1e5e28} 
+void {\bfseries postorder} (void visit(Item\+Type \&), \hyperlink{class_binary_node}{Binary\+Node}$<$ Item\+Type $>$ $\ast$tree\+Ptr) const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_binary_node_tree_8h}{Binary\+Node\+Tree.\+h}\item 
+\hyperlink{_binary_node_tree_8cpp}{Binary\+Node\+Tree.\+cpp}\end{DoxyCompactItemize}

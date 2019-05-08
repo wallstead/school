@@ -1,0 +1,32 @@
+include partials/header
+
+- var isMath = gameData.gametype == 'math' 
+- var isSpelling = gameData.gametype == 'spelling' 
+
+.content.mygames
+    ul.uk-breadcrumb
+        li
+            a(href='/games') Games
+        li
+            a(href='#') #{title}
+
+    .subheader
+        h1 #{title}
+
+    .gameContent
+        if isSpelling
+            .spelling-game 
+                .uk-margin
+                div.new-game-frame(data-gameid=gameData.id, data-studentid=userData[0].id, data-gametype=gameData.gametype)
+        else if isMath
+            .math-game 
+                .uk-margin
+                div.new-game-frame(data-gameid=gameData.id, data-studentid=userData[0].id, data-gametype=gameData.gametype)
+                .uk-margin
+        .game-information
+            h3 See Results:
+            .uk-margin
+                a(class="uk-button uk-button-secondary", href='/games/' + gameSlug + '/results') My Results
+    
+
+include partials/footer

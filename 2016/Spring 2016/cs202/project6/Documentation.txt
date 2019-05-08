@@ -1,0 +1,50 @@
+Student Name: Willis Allstead
+Program Name: Agency and Cars
+Program Purpose: To allow the parsing of data for a car agency.
+
+In the project6.cpp, which is where the main driver is, I have a basic menu made
+by using a switch statement inside of a do-while statement. In that file I
+#include the <iostream> and <iomanip> libraries and the "Agency.h" specification
+file we were provided. In the menu I give the user options of: reading data from
+file, printing the data for all cars, printing the data for only the available
+cars, printing the data for the most expensive car, estimating the price of
+renting a specific car, sorting the data by make, sorting the data by price,
+searching the data by make, and finally an option to exit the program. After the
+main I have three  functions that provide interfaces for the readData(),
+estimateCost(), and searchByMake() functions of the agency.
+
+The Agency.h was given to me and I did not change anything within it. In the
+Agency.cpp file I #include the <iostream> and <ifstream> libraries and the
+"Agency.h specification file, then define three function prototypes. I know is
+not best practice to put these functions inside the implementation of a class.
+These functions are copy_string(), compare_string(), and copy_zip(). I also set
+a ZIP_LENGTH const int and a CAR_COUNT const int. Next I have the default
+constructor for the Car class. Then I have a parameterized constructor for the
+Car class, followed by the copy constructor. Then I have the destructor for the
+Car class. I then have the copy() function for the car class which copies the
+data from a provided car.In the Car class's print function I simply cout the
+data for that car. Next I have all of the getters and setters for the Car's
+private data members. After that I have the Agency's default constructor, copy
+constructor, and destructor functions. In the readData() function of the Agency
+class, I use an ifstream variable named fin to read data from the file using
+a for loop and insert it into its corresponding data types in each Car of the
+Agency. In the print() function of the Agency, I use a for loop to call the
+print() functions of each car in order. In the printAvailableCars() function of
+the Agency, I use a for loop to call the print() functions of only the cars
+which are available, for all cars in the agency. In the findMostExpensive()
+function of the Agency, I use a for loop to iterate through the cars, compare
+each car's price to the price of the current most expensive car and set that
+pointer to this car if this car exceeds the price of the car the pointer is
+pointing to. In the estimateCost() function I use a for loop to first increment
+a pointer to the car provided to the function, then simply return the price of
+that car's price multiplied by the amount of days wanted. The sortByMake()
+function uses a simple bubble sort, with the compare_string() function to decide
+if two cars need to be swapped. Similarly, the sortByPrice() uses a bubble sort
+but instead compares the prices of the two cars and makes sure the most
+expensive comes before the least. Then I define my 2 basic string functions,
+followed by a copy_zip() function which is used to copy each integer in the
+zip array of an Agency, which is used in the copy constructor of the Agency
+class.
+
+Changes I would make: I would move the 3 functions at the bottom to their own
+classes.

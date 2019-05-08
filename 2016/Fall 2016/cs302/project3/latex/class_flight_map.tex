@@ -1,0 +1,89 @@
+\hypertarget{class_flight_map}{}\section{Flight\+Map Class Reference}
+\label{class_flight_map}\index{Flight\+Map@{Flight\+Map}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_flight_map_abe6b8054568bad96d3ac09c498695306}{Flight\+Map} (\hyperlink{class_city}{City} cities\mbox{[}100\mbox{]}, int city\+Count)
+\begin{DoxyCompactList}\small\item\em Default constructor for the class. \end{DoxyCompactList}\item 
+int \hyperlink{class_flight_map_ac74738eb68e8390c0e5fd87effb600e4}{get\+Index\+From\+Name} (string name)
+\begin{DoxyCompactList}\small\item\em get\+Index\+From\+Name function \end{DoxyCompactList}\item 
+void \hyperlink{class_flight_map_ab6e4b49626a2ea60788e67d851cd721a}{mark\+Visited} (\hyperlink{class_city}{City} \&a\+City)
+\begin{DoxyCompactList}\small\item\em mark\+Visited function \end{DoxyCompactList}\item 
+void \hyperlink{class_flight_map_a97cfb0e508046ffb802be03496f88fc4}{unvisit\+All} ()
+\begin{DoxyCompactList}\small\item\em unvisit\+All function \end{DoxyCompactList}\item 
+\hyperlink{class_city}{City} \hyperlink{class_flight_map_a1bec9c3bddeadfeb909a457a574b5326}{get\+Next\+City} (\hyperlink{class_city}{City} from\+City)
+\begin{DoxyCompactList}\small\item\em get\+Next\+City function \end{DoxyCompactList}\item 
+bool \hyperlink{class_flight_map_a10c5a85d074c3251185a5209a2751a09}{is\+Path} (string origin\+Name, string destination\+Name)
+\begin{DoxyCompactList}\small\item\em is\+Path function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_flight_map_abe6b8054568bad96d3ac09c498695306}{}\label{class_flight_map_abe6b8054568bad96d3ac09c498695306} 
+\index{Flight\+Map@{Flight\+Map}!Flight\+Map@{Flight\+Map}}
+\index{Flight\+Map@{Flight\+Map}!Flight\+Map@{Flight\+Map}}
+\subsubsection{\texorpdfstring{Flight\+Map()}{FlightMap()}}
+{\footnotesize\ttfamily Flight\+Map\+::\+Flight\+Map (\begin{DoxyParamCaption}\item[{\hyperlink{class_city}{City}}]{cities\mbox{[}100\mbox{]},  }\item[{int}]{city\+Count }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the class. 
+
+constructs the class 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_flight_map_ac74738eb68e8390c0e5fd87effb600e4}{}\label{class_flight_map_ac74738eb68e8390c0e5fd87effb600e4} 
+\index{Flight\+Map@{Flight\+Map}!get\+Index\+From\+Name@{get\+Index\+From\+Name}}
+\index{get\+Index\+From\+Name@{get\+Index\+From\+Name}!Flight\+Map@{Flight\+Map}}
+\subsubsection{\texorpdfstring{get\+Index\+From\+Name()}{getIndexFromName()}}
+{\footnotesize\ttfamily int Flight\+Map\+::get\+Index\+From\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+get\+Index\+From\+Name function 
+
+returns the index of the city, given a name \hypertarget{class_flight_map_a1bec9c3bddeadfeb909a457a574b5326}{}\label{class_flight_map_a1bec9c3bddeadfeb909a457a574b5326} 
+\index{Flight\+Map@{Flight\+Map}!get\+Next\+City@{get\+Next\+City}}
+\index{get\+Next\+City@{get\+Next\+City}!Flight\+Map@{Flight\+Map}}
+\subsubsection{\texorpdfstring{get\+Next\+City()}{getNextCity()}}
+{\footnotesize\ttfamily \hyperlink{class_city}{City} Flight\+Map\+::get\+Next\+City (\begin{DoxyParamCaption}\item[{\hyperlink{class_city}{City}}]{from\+City }\end{DoxyParamCaption})}
+
+
+
+get\+Next\+City function 
+
+(supposed to return the next (unvisited) city) \hypertarget{class_flight_map_a10c5a85d074c3251185a5209a2751a09}{}\label{class_flight_map_a10c5a85d074c3251185a5209a2751a09} 
+\index{Flight\+Map@{Flight\+Map}!is\+Path@{is\+Path}}
+\index{is\+Path@{is\+Path}!Flight\+Map@{Flight\+Map}}
+\subsubsection{\texorpdfstring{is\+Path()}{isPath()}}
+{\footnotesize\ttfamily bool Flight\+Map\+::is\+Path (\begin{DoxyParamCaption}\item[{string}]{origin\+Name,  }\item[{string}]{destination\+Name }\end{DoxyParamCaption})}
+
+
+
+is\+Path function 
+
+(supposed to return a true if a destination can be visited, false otherwise) \hypertarget{class_flight_map_ab6e4b49626a2ea60788e67d851cd721a}{}\label{class_flight_map_ab6e4b49626a2ea60788e67d851cd721a} 
+\index{Flight\+Map@{Flight\+Map}!mark\+Visited@{mark\+Visited}}
+\index{mark\+Visited@{mark\+Visited}!Flight\+Map@{Flight\+Map}}
+\subsubsection{\texorpdfstring{mark\+Visited()}{markVisited()}}
+{\footnotesize\ttfamily void Flight\+Map\+::mark\+Visited (\begin{DoxyParamCaption}\item[{\hyperlink{class_city}{City} \&}]{a\+City }\end{DoxyParamCaption})}
+
+
+
+mark\+Visited function 
+
+sets a city\textquotesingle{}s visited boolean as true \hypertarget{class_flight_map_a97cfb0e508046ffb802be03496f88fc4}{}\label{class_flight_map_a97cfb0e508046ffb802be03496f88fc4} 
+\index{Flight\+Map@{Flight\+Map}!unvisit\+All@{unvisit\+All}}
+\index{unvisit\+All@{unvisit\+All}!Flight\+Map@{Flight\+Map}}
+\subsubsection{\texorpdfstring{unvisit\+All()}{unvisitAll()}}
+{\footnotesize\ttfamily void Flight\+Map\+::unvisit\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+unvisit\+All function 
+
+iterates through cities array and marks all as unvisited 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Flight\+Map.\+v1.\+h\item 
+\hyperlink{_flight_map_8v1_8cpp}{Flight\+Map.\+v1.\+cpp}\end{DoxyCompactItemize}

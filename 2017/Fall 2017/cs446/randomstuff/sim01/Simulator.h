@@ -1,0 +1,71 @@
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
+#include <stdexcept>
+#include <algorithm>
+#include <string>
+#include <vector>
+#include <queue>
+#include <sstream>
+
+
+#ifndef SIM_H
+#define SIM_H
+
+struct Component {
+  std::string type;
+  int cycle_time;
+
+Component(std::string comp, int time ) : type(comp), cycle_time(time) {};
+};
+
+struct Meta {
+  char code;
+  int cycles;
+  std::string descriptor;
+  
+Meta(char c, int t, std::string d) : code(c), cycles(t), descriptor(d) {};
+};
+  
+
+class Simulator {
+ public:
+  //Constructor/Destructor
+  Simulator();
+  Simulator(std::string);
+  ~Simulator();
+
+
+ private:
+  //Data members
+  std::string config_file;
+  std::string meta_file;
+  std::string log_file;
+  std::vector<Component> sim_data;
+  std::queue<std::string> meta_data;
+  bool print_to_screen;
+  bool print_to_file;
+
+  //Parsing functions
+  bool parse_config(const std::string&);
+  bool parse_metadata(const std::string&);
+  void simulate();
+
+  //Helper functions
+  bool check_extension(const std::string&, const std::string&);
+  Meta error_check(const std::string&);
+  bool is_code(char);
+  bool is_digit(char);
+  bool is_descriptor(const std::string);
+  void remove_whitespace(std::string&);
+  void add_data(const std::string, const std::string);
+  void to_lower(std::string&);
+  void print_config();
+  int get_cycletime(std::string);
+
+  //
+ 
+  
+};
+
+#endif

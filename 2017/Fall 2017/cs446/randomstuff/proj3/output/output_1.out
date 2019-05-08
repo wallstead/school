@@ -1,0 +1,49 @@
+0.000017 - Simulator program starting
+0.000057 - OS: preparing Process 1
+0.000064 - OS: starting process Process 1
+0.000069 - Process 1: allocating memory
+0.420080 - Process 1: memory allocated at 0x00000000
+0.420112 - Process 1: start processing action
+0.460127 - Process 1: end processing action
+0.460158 - Process 1: start hard drive input on HDD 0
+1.160577 - Process 1: end hard drive input
+1.160625 - Process 1: start printer output on PRNTR 0
+6.160715 - Process 1: end printer output
+6.160784 - Process 1: start processing action
+6.250799 - Process 1: end processing action
+6.250828 - Process 1: start processing action
+6.340842 - Process 1: end processing action
+6.340895 - Process 1: start keyboard input
+11.340962 - Process 1: end keyboard input
+11.340995 - Process 1: start processing action
+11.481027 - Process 1: end processing action
+11.481055 - Process 1: start hard drive output on HDD 1
+11.931151 - Process 1: end hard drive output
+11.931207 - Process 1: allocating memory
+12.071227 - Process 1: memory allocated at 0x00000080
+12.071256 - Process 1: start mouse input
+12.251347 - Process 1: end mouse input
+12.251395 - Process 1: start hard drive output on HDD 2
+12.601503 - Process 1: end hard drive output
+12.601548 - Process 1: start processing action
+12.681554 - Process 1: end processing action
+12.681595 - Process 1: start hard drive input on HDD 3
+13.281691 - Process 1: end hard drive input
+13.281750 - Process 1: start printer output on PRNTR 1
+19.281836 - Process 1: end printer output
+19.281894 - Process 1: start processing action
+19.391927 - Process 1: end processing action
+19.391958 - Process 1: start processing action
+19.401963 - Process 1: end processing action
+19.401971 - Process 1: start printer output on PRNTR 2
+21.902069 - Process 1: end printer output
+21.902129 - Process 1: start monitor output
+22.027202 - Process 1: end monitor output
+22.027261 - Process 1: start speaker output
+22.047332 - Process 1: end speaker output
+22.047353 - Process 1: start processing action
+22.157357 - Process 1: end processing action
+22.157385 - Process 1: start processing action
+22.297400 - Process 1: end processing action
+22.297438 - OS: removing Process 1
+22.297464 - Simulator program ending

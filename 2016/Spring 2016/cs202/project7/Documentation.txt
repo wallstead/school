@@ -1,0 +1,78 @@
+Student Name: Willis Allstead
+Program Name: Polynomial Expressions
+Program Purpose: To do some math with polynomials.
+
+In the main driver I #included the <iostream>, <string>, and <fsrteam> libraries
+along with my specification file called "PolyNom.h". In the main(), I prompt the
+user for a filename and for a scalar to multiply a polynomial by. I then use an
+ifstream variable called fin to open the file, and check if it opened properly
+using fin.good() in an if-statement. Inside the statement, I make a for-loop
+which populates an array of Polynomials. I then go through some test cases.
+First I print out all of the polynomials in the file. Then I show how two
+polynomials can be multiplied to give a resultant polynomial. Next I show how I
+function-overloaded the * operator overloader by multiplying a polynomial by the
+scalar I asked for earlier in the program. Next, I add two polynomials and print
+the result. Finally I subtract two polynomials and print that result to the
+screen. Once all of these test cases are finished, I delete the array of
+polynomials.
+
+In the implementation of the Polynomial class, I #include the specification file
+along with the <cmath> library, which I use for the pow() and abs() functions.
+Next I have the default constructor for the class, which assigns the maxDegree
+to 3 and allocates memory for 4 coefficients (given in project description).
+In the parameterized constructor I take an int called maxDegree and an int array
+called coefficients. I set this object's maxDegree to the one given, then
+allocate enough memory for an array of coefficients. Then i use a for-loop to
+copy each coefficient over. Next I have the copy constructor. I use the exact
+same strategy as the parameterized constructor for this, but instead of using
+parameters, I use the members of the polynomial parameter. In the PolyNomial
+destructor I set the maxDegree to 0, which is not necessary. I then delete []
+the array of coefficients and set it to NULL. In the solve() function I set an
+int variable total to 0 at the beginning, then using a for loop I add to that
+total. Inside the for loop I get the value of each monomial by multiplying the
+coefficients by the value of the scalar raised to its corresponding degree. This
+is where I use the pow() function. I then return the total. In the overloaded =
+operator I first make sure that the object we are working with is not exactly
+the same object we are currently inside. If this is not the case, I delete the
+coefficients array and then set the maxDegree to the maxDegree of the object
+being copied. Then using a for loop I copy each coefficient into the coefficient
+array. I then return *this. In the overloaded == operator function, I set a
+isEqual flag at the beginning = true. If the max degrees do not match, it will
+be set to false. Also if each coefficient does not equal its corresponding
+coefficient, it will be false. I then return that flag. In the overloaded !=
+operator function, I simply use an if-statement with the already defined ==
+operator, and return false if they are true. In the overloaded * operator
+function that takes in another polynomial as a multiplier, I define a
+newMaxDegree to be the addition of both of the maxdegrees of the multipliers. I
+then create a new array of coefficients using that new maxdegree. I use two for
+loops to set the value at the index of each degree of the monomials in the
+coefficient array to be equal to the value at each index of the 1st coefficient
+array * the value of the index of the 2nd coefficient array. I then create a new
+PolyNom object with those parameters, and delete [] the newly created
+coefficients array. I then return that newPoly. I take a similar approach in the
+overloaded * operator function that takes in a scalar as a multiplier, but
+instead only use one for loop now and simply multiply each coefficient in the
+coefficients array by that scalar. I then create a newPoly with those values and
+return that newPoly. In the extraction operator overload function, I make sure
+of several things. I make it only print the first sign if it is negative. I
+make it only print a coefficient of 1 if the exponent of the x is 0. I make sure
+each sign is printed correctly associated with a positive or negative value. I
+make sure to only print the ^ along with the exponent if the exponent is greater
+than 1. I then return the output. In the insertion operator overload function I
+delete the polynomial's coefficients (if it had any), and then set the maxdegree
+from the input. I then use a for loop to insert the input into each coefficient
+in the coefficients array. I then return the input so it will continue onto the
+next value. In the + operator overload function I first figure out which
+polynomial of the two provided have the highest degree, and set the new max
+degree to that. Then I use the new max degree to allocate memory for a
+newCoefficients array. I then use two separate for loops to add to each
+corresponding index of each coefficient. I figure out the index of each
+coefficient by subtracting the maxDegree of that polynomial from the newMax, and
+add that difference to the incremented integer of the each loop. I then
+initialize a newPoly object with those parameters. I then delete the
+newCoefficients array and return the newPoly. In the - operator overload
+function I do the exact same as the + function, but in one of the for loops I
+subtract from the value at the index instead of add.
+
+Changes I would make: I would try to find more ways to condense my code while
+still following best-practices. 

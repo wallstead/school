@@ -1,0 +1,14 @@
+; prog 3
+LDR		r1, =0x0150 ; load in val1
+		
+LDR		r2, =0x0154 ; load in val2
+		
+CMP		r1, r2 ; compare them
+		
+BGE		FIRSTLARGER ; if first isn't larger
+		
+STR		r2, [0x0152] ; store second
+		
+FIRSTLARGER: ; else
+		
+STR		r1, [0x0152] ; store first

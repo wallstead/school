@@ -1,0 +1,26 @@
+Student Name: Willis Allstead
+Program Name: Inheritance
+Program Purpose: To learn about Inheritance.
+
+In this project we learned how classes can be inherited and the use of a base
+class. We used pure virtual functions in the base class and implemented each one
+in the subclasses. We read a data file and populated a double-pointer array of
+shapes with 4 different types of shapes. Then we printed the area/volume of each
+shape along with the perimeter/surface area of each shape.
+
+Observations:
+(1) When creating an object of a class that inherits another class, the
+inherited class is constructed first, then the inheritor is constructed. For
+example when a cylinder is created, the circle class is constructed first.
+(2) In testing base class pointers with derived class objects, I found that this
+is a very useful and efficient technique in iterating through inheriting
+objects in an array. I put this to use when I populate the array of shapes.
+(3) Tried to set a member of the RectangularPrism class from the Rectangle
+class constructor. This did not work, as I expected.
+(4) Made those data members marked "protected" in each class as "private", and
+then tried to inherit those data members. This failed.
+(5) I tested removing the = 0 at the end of the virtual functions in the base
+class. The program still compiled and seemed to work correctly. I think the
+reason it still works is that in each of the subclasses of Shape, we declare
+those virtual functions again and implement them. If we did not implement them I
+don't think it would function properly.

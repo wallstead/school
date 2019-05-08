@@ -1,0 +1,56 @@
+Student Name: Willis Allstead
+Program Name: Rent-A-Vehicle
+Program Purpose: Take input file from user and parse it using several
+different functions.
+
+This project #imports the <iostream>, <iomanip>, and <fstream> libraries.
+There is a constant int named CAR_COUNT which is set equal to 10, because the
+project description specifies that a file with 10 cars will be supplied in every
+case. A struct named rentalCar is then defined to have several properties.
+rentalCar has a char array of size 20 named make. This will hold the make of the
+a car. Similarly, the struct has a char array of size 20 named model. It also
+has an int variable named year, a float to hold the price, and a bool to hold
+the car's availability. Below this struct are the prototypes of the 5 functions
+used, besides the main. In the main function, an int variable named selection is
+set to 0. This will hold the user's selection. There is then a do-while loop for
+the menu. As long as the selection is not 6 (the exit selection), the program
+will re-print the menu once the selected function is finished running. Inside of
+the "do" brackets the menu title is printed to the screen, with some styling.
+Then, the 6 options are printed to the screen. Next, the user is prompted to
+input their selection using the select function. This is done using
+pass-by-reference. After that, there is a rentalCars array of size CAR_COUNT
+created called cars. This will hold the information provided by the file. Next
+there is a switch statement that uses the selection made by the user to decide
+the function which will be used. Case 6 prints to the screen that the program is
+exiting. The default case notifies the user of the incorrect input. Case 1 runs
+readFile and supplies the cars array as the parameter. Case 2 runs printCars and
+supplies false as the availableOnly parameter and the cars array. Case 3 runs
+the estimatePrice function and supplies the cars array as the parameter. Case 4
+runs the mostExpensive function and supplies the cars array as the parameter.
+Case 5 runs the printCars function and supplies true as the availableOnly
+parameter and the cars array. In the readFile function, there is a variable of
+type ifstream decalared named fin. There is a char array of size 20 called
+ifileName, which will hold the name of the input file specified by the user. The
+user is prompted to input the input file name. cin is used to put the user input
+into the ifileName variable. Then the file is opened using fin.open and the
+status of the file is checked using fin.is_opened. If the file is opened, a for
+loop runs through each element of the cars array. fin is inserted into the year,
+make, model, price, and availability of each car. The user is then notified that
+the file was successfully read. In the printCars function, depending on what the
+availableOnly bool was set to, there is a customized title for the table of car
+data. The table column labels are then printed out. Then a for loop is used to
+iterate through each car in the cars array. Inside the loop, if either this
+car.available does not equal false or the availableOnly bool does not equal
+true, then the information for this car is printed to this row of the table.
+The output is styled and the boolalpha flag is used to make the output for
+available true or false, instead of 1 or 0. Inside the estimatePrice function
+there are two int variables declared, carNumber and dayCount. carNumber will
+hold the number of the car chosen, and dayCount will hold the amount of days the
+user wants to rent that car. The user is prompted to enter in both of these
+values. A float variable named cost is initialized to the index of the car
+chosen's price * the dayCount. Then the cost is printed to the console. The
+mostExpensive function simplly initializes an index variable named
+mostExpensiveIndex to 0, then iterates through each car in the cars array using
+a for loop. If the price of this car is greater than the car before it, the
+mostExpensiveIndex is set to the index of this car. Then the most expensive
+car's data is printed to the screen.

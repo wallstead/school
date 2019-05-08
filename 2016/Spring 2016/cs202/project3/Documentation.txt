@@ -1,0 +1,64 @@
+Student Name: Willis Allstead
+Program Name: Rent-A-Vehicle v2
+Program Purpose: Take input file from user and parse it using several
+different functions.
+
+This project #imports the <iostream>, <iomanip>, and <fstream> libraries.
+There are 3 const ints defined: AGENCY_COUNT, CAR_COUNT, and ZIP_LENGTH. The
+values of these ints are given in the project description. There are two structs
+defined: agency and rentalCar. The agency struct is defined to have to have a
+name, a zipcode, and an inventory of 5 rentalCars. Each rentalCar has a make,
+model, year, price, and availability. Next I have the function prototypes. In
+the main, I have defined an agencies array of type agency and of size
+AGENCY_COUNT. I then declare a pointer to the first agency in that array. Next I
+declare an int called selection which will hold the user selection in the menu.
+I use a do-while loop for my menu. The while checks if the selection is not 6,
+the exit command for the program. In the do brackets, I print the menu and style
+the output. I then call the select function, and pass it the selection variable.
+Within the select function, I take the selection reference variable and set it
+to some user input. Back in the main, I then make sure that the pointer to the
+agencies is reset back to the first agency. Then I use a switch statement with
+the selection variable as the input. Inputs 1-5 simply run their corresponding
+functions. In the readFile function I declare a variable of type ifstream called
+fin and a variable called ifileName which will be used to hold the
+user-specified input file. The user is prompted for the name of the file, then
+I use fin.open() to attempt to open that file. I check if it was opened using
+fin.is_open() in an if-statement. Once the file is opened, a for loop is used to
+be able to count through the array of agencies. Inside this loop a pointer is
+set to point to the first (empty) int in the zip array of this agency. Then the
+insertion operator is used to insert the name of the agency into the agency
+array. Then a for loop is used to add take each char of the zipcode in the file,
+convert it into an int, then add it to the zipcode array of the agency. Once
+this is done, I define a pointer to the first rentalCar in the inventory array
+of the agency. Then another for loop is used to set the year, make, model,
+price, and availability of each car. Once these have all finished, the data has
+been successfully read. In the printData function, it uses a for loop to count
+through the agencies. Inside the loop, a pointer is set to point to the first
+int in the zipcode array. The agency name is printed along with each int of the
+zipcode, using a for loop. Then the table column labels are printed with some
+styling added. Then a pointer is set to point to the first rentalCar in the
+inventory of the agency. Another for loop counts through the cars in the
+inventory. The rentalCar pointer is used to display the year, make, model,
+price, and availability of each car. In the estimatePrice function, a char array
+called agencyName is defined (but not manipulated using brackets), which will
+hold the user-specified agency of choice. carNumber and dayCount are both
+defined as ints, and will hold their corresponding user-defined values. The user
+is prompted to enter the information, and a for loop is used to count through
+the agencies to find a match for the agency they chose. This comparison is made
+using the strCompare function. The rentalCar matching the one specified by the
+user is then used in creating a float which taked the price per day of that car
+and multiplies it by the count of days. The user is then shown the price.
+In the mostExpensive function, a float is defined to hold the topPrice of a car.
+Also a pointer is defined but not set to a value, and this will be set to point
+to the most expensive car later. The agencies are looped though, and within that
+each inventory array is looped through. If this car is more expensive than the
+highest price, the highest price is replaced with this price and the pointer is
+set to point to this car. Once the loop finishes, the pointer is then used to
+display the information about the most expensive car. The strCompare function is
+very basic, taking two char pointers as parameters. While neither char is the
+null character, if the first string matches the second, it increments to the
+next char. If they don't match, it returns 0. It returns 1 only if both strings
+are exactly the same.
+
+Changes I would make: I would organize the code more overall. I would set the
+menu to be a separate function so I could keep the main function mostly empty.

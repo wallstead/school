@@ -1,0 +1,49 @@
+0.000000 - Simulator program starting
+0.000178 - OS: preparing Process 1
+0.000488 - OS: starting process Process 1
+0.000510 - Process 1: allocating memory
+0.423803 - Process 1: memory allocated at 0x83648
+0.423907 - Process 1: start processing action
+0.464336 - Process 1: end processing action
+0.464552 - Process 1: start hard drive input
+1.164830 - Process 1: end hard drive input
+1.164925 - Process 1: start printer output
+1.164979 - Process 1: end printer output
+1.165014 - Process 1: start processing action
+1.284097 - Process 1: end processing action
+1.286829 - Process 1: start processing action
+1.399374 - Process 1: end processing action
+1.399477 - Process 1: start keyboard input
+6.416024 - Process 1: end keyboard input
+6.416143 - Process 1: start processing action
+6.564660 - Process 1: end processing action
+6.564756 - Process 1: start hard drive output
+6.564808 - Process 1: end hard drive output
+6.564844 - Process 1: allocating memory
+6.711262 - Process 1: memory allocated at 0x99389
+6.712058 - Process 1: start mouse input
+6.921779 - Process 1: end mouse input
+6.921896 - Process 1: start hard drive output
+6.922005 - Process 1: end hard drive output
+6.922057 - Process 1: start processing action
+7.030630 - Process 1: end processing action
+7.036053 - Process 1: start hard drive input
+7.644520 - Process 1: end hard drive input
+7.644617 - Process 1: start printer output
+7.644667 - Process 1: end printer output
+7.644702 - Process 1: start processing action
+7.782065 - Process 1: end processing action
+7.782178 - Process 1: start processing action
+7.800035 - Process 1: end processing action
+7.800127 - Process 1: start printer output
+7.800197 - Process 1: end printer output
+7.800235 - Process 1: start monitor output
+7.800280 - Process 1: end monitor output
+7.800315 - Process 1: start speaker output
+7.800358 - Process 1: end speaker output
+7.800393 - Process 1: start processing action
+7.935486 - Process 1: end processing action
+7.935585 - Process 1: start processing action
+8.077341 - Process 1: end processing action
+8.077443 - OS: removing Process 1
+8.077489 - Simulator program ending

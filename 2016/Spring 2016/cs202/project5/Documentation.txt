@@ -1,0 +1,81 @@
+Student Name: Willis Allstead
+Program Name: Strings Class
+Program Purpose: To learn Classes
+
+This project #imports the <iostream> and <fstream> libraries along with a
+"String.h" specification file. In the main() I first get the input file name
+from the user. I do this by using an ifstream variable named fin. I create a
+temporary char* called iFileName and give it a temporary size of 20. I then
+prompt the user for the file name and use cin to retrieve it. I then create a
+base pointer to iFileName called iFileNameHome. I then get the length of the
+string entered by the user using a simple while loop. I then reset iFileName
+back to its base address of iFileNameHome. The I create a new char* called
+iFileNamev2 of size length+1 (to account for the null character). I then use a
+while loop to copy each char from iFileName into iFileNamev2. I then reset the
+address of iFileNamev2 to a previously defined iFileNamev2Home, and delete the
+iFileName. I use fin.open() to open the file saved in iFileNamev2. Then I delete
+iFileNamev2. I use and if-else statement with fin.is_open() to check if the file
+opened successfully. If it did, I define two variables of type String, single1
+and single2. I use two temp char* variables of size 20 to retrieve the two
+strings from the file. I then call initialize on the two String variables and
+supply their corresponding temp char* variables as parameters. I then delete
+both of the temp char* variables.
+
+For my single instance test driver, I start by printing both Strings to the
+screen. Next I print both of their lengths to the screen. Then I compare
+string1 (which is single1) to string2 (which is single2). I then compare string2
+to string1. Next I compare string2 to string1, and compare string1 to string2.
+Next I concatenate string1 to string2, and print both of the strings to the
+screen to show what changed. Next I concatenate string2 to string1, and print
+both of the strings to the screen to show what changed. Next I copy string 2 to
+string 1 and print the results to the screen. Lastly I deallocate memory for
+both strings.
+
+For my array test driver, I start by allocating memory for an array of 10
+Strings. I then set a stringPtr to strings, the name of the array. Using a
+for-loop I use the .print() function of each string to print each string in the
+array to the screen. I iterate through the array and once the for-loop is done,
+I reset the stringPtr to strings (the base address of the array). I use this
+same idea multiple times throughout this test driver. I use a for-loop to print
+the lenghts of each string in the array. I then compare string 7 to 6, and 1 to
+3. I then concatenate string 10 to string 9 and print the resulting strings. I
+also concatenate string 3 to string 7 and print the resulting strings. I then
+copy string 8 to string 5 and print the resulting strings. I then use a for-loop
+to re-print to screen all of the resulting buffers in the array. I then use a
+for-loop to deallocate the memory used for each String in the strings array.
+Lastly I delete the strings array itself. I then close the file.
+
+In the implementation file (String.cpp), I #import the iostream library and the
+"String.h" specification file. In String::initialize() I set a char* to the
+address of the str parameter. I then get the length of the str by using a while
+loop and iterating through each char until the null character. I then reset the
+str pointer to strHome. I set wordLength to the length I found in the
+while-loop. Next I dynamically allocate memory of size wordLength+1 to the
+buffer. I create a bufferHome pointer which points to the base address of the
+buffer. I use a while loop to copy each char from str into the buffer until a
+null character shows up. Then I set the last character in the buffer to be a
+null character. I reset the str to strHome and buffer to bufferHome. In the
+String::deallocate() I simply delete the buffer and set it to NULL; In the
+String::copy() I deallocate the current buffer. I then define a char* called
+strPtr as the str.buffer, supplied to this function. I then initialize() the
+strPtr. In String::concat, I set a newLength int to be the sum of str.wordLength
+and wordLength. This will be the new length of the string. I create a tempStr
+char* of size newLength+1. I create a home pointer to tempStr. I then set a
+char* called strPtr to str.buffer, and create a home pointer to it. I then
+create a home pointer for the buffer. I use a while loop to find and go to the
+null character of the buffer. This is where we will start to add the new string.
+Next I use a while loop on the strPtr to copy each strPtr char into the tempStr
+until the null character. Then strPtr is set back to home, tempStr is set to the
+null character, tempStr is set to home, and buffer is set to home. I call
+deallocate() in preparation for the new string. I then initialize() the tempStr.
+Lastly in this function I delete the tempStr and set it to NULL. In
+String::compare() I set a char* to equal the str.buffer supplied. I then set a
+char* to be the base address of the current buffer. I use a while-loop to
+compare the integer values of each char in each string, as long as neither are
+the null character. After this loop, I reset the buffer to home. I then use an
+if-statement to return the specified integer values for each case. In
+String::length() I simply return wordLength. In String::print() I simply cout
+the current buffer.
+
+Changes I would make: I would make the string compare case-sensitive if I had
+more time.

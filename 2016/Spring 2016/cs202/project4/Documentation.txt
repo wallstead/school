@@ -1,0 +1,60 @@
+Student Name: Willis Allstead
+Program Name: Decode Message
+Program Purpose: To decode a message using certain rules and pointers.
+
+This project #imports the <iostream> and <fstream> libraries. There is a Pieces
+struct defined to contain a char* word, and an int called jump. I then declare
+my function prototypes. In the main() I allocate memory for a new char* variable
+called ifileName, which stands for input file name. I then prompt the user for
+the file name using cin. I then use an ifstream called fin and the fin.open()
+function to open the file specified. I then delete the memory for the input file
+name. Next I define two int variables named pieceCount and keyCount. I then
+check if the file was opened using fin.good() in an if-statement. If the file
+did open, I retrieve the pieceCount and keycount using fin and the insertion
+operator. Then with those counts, I allocate the correct amount of memory for a
+pptr which points to the pieces array, and I allocate memory for a kptr which
+points to the keys array. For both of these pointers I then set another pointer
+which points to the base address of the array. I also define a char* of size 100
+called decrypted which is the temporary string which I will be concatenating
+strings to. I then call the readFile function. Once I have the data read in, I
+call the decrypt function which populates the decrpyted array. Next I delete the
+memory allocated for each word in the pieces array. Then I delete the memory
+allocated for both the pptr and the kptr. Next I allocate the correct amount of
+memory to a char* called decrypted_final. I copy the string from decrypted into
+decrypted_final and delete the memory in decrypted. Then I cout the
+decrypted_final string. Lastly, I delete the memory in the decrypted_final
+variable. In my readFile() function, I declare pointers to the base addresses of
+both the pptr and kptr. I then use a for loop that goes from 0..<pieceCount.
+I create a tempWord char* and allocate memory for it. I then use the pointer to
+fin which I passed into the function, and insert into both the tempWord and the
+jump of the *pptr. I then allocate exact memory for the (*pptr).word and copy
+tempWord into (*pptr).word. I then delete the memory for the tempWord. Then I
+increment the pptr each loop. In the next for loop I loop from 0..<keyCount.
+I use the pointer to fin and insert each value of the keys. I then increment the
+kptr. After these loops I reset each pointer to their arrays' base addresses.
+Lastly in readFile() I close() the *fin. In decrypt() I declare pointers to the
+base addresses of both the pptr and kptr. I declare a pieceIndex which will be
+used to keep track of the current index. Inside a for loop which loops from
+0..<keyCount, I increment the pptr by the value of the kptr. I also set
+pieceIndex to this value. Next, in a while loop I check if the (*pptr).jump does
+not equal 0. If this is true, I check if the jump would require a wrap in the
+array. If it doesn't, I just increment pptr and pieceIndex by the jump. If it
+does, I calculate what the wrapped index should be. I then set pptr and
+pieceIndex to that index. Outside of the while loop, I concatenate that word to
+the decrypted string using strConcat(). Next I increment the kptr and set the
+pptr to pptrHome. strConcat takes two char* parameters. While the char at *str1
+is not the null character, it increments the str1. Next, while the char at *str2
+is not the null character it sets the value of str1 to the value at str2. Then
+it increments the both pointers. Lastly, *str1 is set to a space char. In
+stringLength, it takes in a char* parameter. It sets an int variable length to
+0. While the value at the str pointer is not the null, the str pointer is
+incremented and the length is incremented. The function then returns the length.
+In stringCopy(), two char* parameters are taken. While the value in str2 is not
+the null character the value at srt1 is set to the value at str2. Then both
+pointers are incremented. Lastly, a null character is added to the end of str1
+to make it a proper string.
+
+
+Changes I would make: I wanted to find ways to pass less parameters to the 2
+main functions. I feel like once I have more experience with pointers I will be
+able to do this.

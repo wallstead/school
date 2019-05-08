@@ -1,0 +1,77 @@
+html(lang='en')
+	head
+		title #{title} - Eduplay
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		//- link(rel='stylesheet', href='/public/css/bootstrap.css')
+		//- link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto:100,400,700')
+		//- link(rel='stylesheet', href='/public/css/bootstrap-table.css')
+		//- link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/css/tether.min.css')
+		//- link(rel='stylesheet', href='/public/css/bootstrap-select.css')
+		//- link(rel='stylesheet', href='/public/css/font-awesome.css')
+		//- link(rel='stylesheet', href='/public/css/selectize.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+		script(src='https://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js')
+
+		link(rel='stylesheet', href='/public/css/style.css')
+
+		//- UIKit
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css')
+
+		script(src='/public/js/scripts.js')
+		script(src='/public/games/spelling/Build/UnityLoader.js')
+	body
+		.header
+			.content
+				.logo
+					a(href="/")
+						h2 Eduplay
+				.links
+					if (userData)
+						button 
+							if userData[0].username 
+								|#{userData[0].username}
+							else
+								|#{userData[0].firstname} #{userData[0].lastname} 
+							span(uk-icon="chevron-down")
+						.dropdown(uk-dropdown='pos: bottom-right; animation: uk-animation-scale-up; duration: 100' class="uk-transform-origin-top-right")
+							ul.uk-nav.uk-dropdown-nav
+								if userData[0].username 
+									li
+										a(href='/games') Games
+									li
+										a(href='/account') Account
+									li.uk-nav-divider
+									li
+										a(href='/logout') Logout
+								else
+									li
+										a(href='/my-games') My Games
+									li
+										a(href='/account') Account
+									li.uk-nav-divider
+									li
+										a(href='/logout') Logout
+					else
+						a(href="/teacher-signup")
+							p Teacher Signup
+
+		if messages
+			if messages.warning
+				if messages.warning.length
+					.uk-alert-warning(uk-alert='').alert
+						a.uk-alert-close(uk-close='')
+						p
+							| #{messages.warning}
+			if messages.danger
+				if messages.danger.length
+					.uk-alert-danger(uk-alert='').alert
+						a.uk-alert-close(uk-close='')
+						p
+							| #{messages.danger}
+			if messages.success
+				if messages.success.length
+					.uk-alert-success(uk-alert='').alert
+						a.uk-alert-close(uk-close='')
+						p
+							| #{messages.success}
+
